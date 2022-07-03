@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Thanks for signing up</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  
+</style>
+</head>
+<body>
+
+  <h1 id="header" class="header">Your Profile</h1>
+  <p id="name" class="name">Name: </p>
+  <p id="favcolour"class="colour">Favourite Colour: </p>
+  <p id="numberofpets"class="pets">Number Of Pets:</p>
+  <p if="age"class="age">Age: </p>
+ 
+<script type="text/javascript">
+var firstname = localStorage.getItem("store1");
+var lastname = localStorage.getItem("store2");
+// var favouritecolour=localstorage.getItem("store3");
+// var numberofpets=localstorage.getItem("store4");
+// var age=localstorage.getitem("store5");
+document.getElementById("header").innerHTML="Your profile, "+firstname;
+document.getElementById("name").innerHTML="Name: "+firstname+" "+lastname;
+if (favouritecolour !=null){
+document.getElementById("favcolour").innerHTML="Favourite colour: "+favouritecolour;
+}
+if (numberofpets!=null){
+document.getElementById("numberofpets").innerHTML="Number of pets: "+numberofpets;
+}
+
+document.getElementById("age").innerHTML="Age: "+age;
+
+
+
+</script>
+  
+  
+  
+  </body>
+    
+
+</html>

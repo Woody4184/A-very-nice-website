@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome&#33;</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<button class="WelcomeText">
+  Guest Login
+</button>
+<p class="PageDesc">
+  Hi, please fill in the text boxes with the requested infomation (* mandatory)
+</p>
+<form action="WelcomePage.html" method="GET">
+<p>First name*:</p>
+<input type="text" id="first_name"  minlength="2" required></input>
+
+<p>Last name*</p>
+<input type="text" id="last_name"  minlength="2" required></input>
+
+<p>Favourite colour</p>
+<input type="text" id="colour"></input>
+
+<p>Number of pets</p>
+<input type="text" id="numberpets"></input>
+<p>Age*:</p>
+<input type="text" id="age" required></input>
+<button  onclick="myfunction()" class="button">Submit</button>
+
+<img src="img_5terre.jpg"alt="Nice part of the world" class="image "style="border:5px solid black">
+
+
+<script type="text/javascript">
+
+var firstname;
+function myfunction(){
+  f1();
+  f2();
+}
+function f1(){
+  
+  firstname=document.getElementById('first_name').value;
+  localStorage.setItem('store1',firstname);
+  lastname=document.getElementById('last_name').value;
+  localStorage.setItem('store2',lastname);
+  
+}
+function f2(){
+  
+  colour=document.getElementById('colour').value;
+  localStorage.setItem('store3',colour);
+  numberofpets=document.getElementById('numberpets').value;
+  localStorage.setItem('store4',lastname);
+  age=document.getElementById('age').value;
+  localStorage.setItem('store5',lastname);
+
+}
+</script>
+</form>
+
+</body>
+
+</html>
